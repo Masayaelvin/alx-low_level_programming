@@ -1,9 +1,10 @@
-#include <stdio.h>
+#include "main.h" 
 /**
  * main - cause an infinite loop
  * Return: 0
  */
-int main((void)
+int main(void)
+
 {
 int i;
 
@@ -18,7 +19,6 @@ i = 0;
  * }
  */
 
-printf("infinite loop avoided! \\0/\n");
-
+printf("Infinite loop avoided! \\o/\n");
 return (0);
 }
