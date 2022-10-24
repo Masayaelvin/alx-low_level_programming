@@ -11,7 +11,7 @@ void print_numbers(void)
 	char c;
 
 	c = 0;
-	while (a < 10)
+	while (c < 10)
 	{
 		_putchar(c);
 		c++;
