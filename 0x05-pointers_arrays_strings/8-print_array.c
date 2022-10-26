@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * print_array - prints elements of an array of intergers
  * @n: number of itemms to be printed
