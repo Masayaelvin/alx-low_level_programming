@@ -1,7 +1,7 @@
 #include "main.h"
 
-/*
- * _memcopy - copiess n bytes from source to destination
+/**
+ * _memcpy- a afunction that copies a memory area
  * @dest: destination
  * @src : source
  * @n: how much we copy
@@ -11,12 +11,13 @@
 
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int index;
-	unsigned char *destiny = dest;
-	const unsigned char *source = src;
+	int r = 0;
+	int i = n;
 
-	for (index = 0; index < n; index++)
-		destiny[index] = source[index];
-
+	for (; r < i; r++)
+	{
+		dest[r] = src[r];
+		n--;
+	}
 	return (dest);
 }
