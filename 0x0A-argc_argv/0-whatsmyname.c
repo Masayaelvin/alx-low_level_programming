@@ -1,12 +1,12 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
- * main - the main function
- * @argc: count
- * @argv: statements
- * Return : Always 0 on success
+ * main - Print the name of the program
+ * @argc: Count arguments
+ * @argv: Argument
+ * Return: Always 0 (Success)
  */
-
 int main(int argc, char *argv[])
 {
 	printf("%s", argv[0]);
