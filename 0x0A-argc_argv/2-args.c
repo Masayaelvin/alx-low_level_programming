@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "main.h"
+#include <stdlib.h>
 
 /**
  * main - Print the name of the program
@@ -7,18 +7,10 @@
  * @argv: Argument
  * Return: Always 0 (Success)
  */
-
 int main(int argc, char *argv[])
 {
-	int i;
+	while (argc--)
+		printf("%s\n", *argv++);
 
-	if (i < argc)
-	{
-		for (i = 0; i < argc; i++)
-		{
-			printf("%s\n", argv[i]);
-		}
-	}
-
-	return (0);
+	exit(EXIT_SUCCESS);
 }
