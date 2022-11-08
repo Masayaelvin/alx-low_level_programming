@@ -1,1 +1,1 @@
-0x0A-argc_argv
+printing all the arguments
