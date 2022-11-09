@@ -18,7 +18,8 @@ int check(char *str)
 	while (i < strlen(str))
 	{
 		if (!isdigit(str[i]))
-	i++;		return (0);
+			return (0);
+		i++;
 	}
 	return (1);
 }
@@ -34,7 +35,7 @@ int main(int argc, char *argv[])
 	int i;
 	int sum = 0;
 	int to_int;
-	
+
 	for (i = 1; i < argc; i++)
 	{
 		if (check(argv[i]))
@@ -42,12 +43,11 @@ int main(int argc, char *argv[])
 			to_int = atoi(argv[i]);
 			sum = sum + to_int;
 		}
-		else 
+		else
 		{
 			printf("Error\n");
 		return (1);
-		}
-		i++;
+		}	
 	}
 	printf("%d\n", sum);
 	return (0);
