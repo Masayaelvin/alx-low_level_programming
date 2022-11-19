@@ -18,7 +18,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	char *str;
 	unsigned int i;
 
-	va_start(strings, n)
+	va_start(strings, n);
 
 	for (i = 0; i < n; i++)
 	{
